@@ -13,4 +13,7 @@ class Constants {
     static let taskCellId = "taskCell"
     static let catagorySectionHeaderViewId = "CatagorySectionHeaderView"
     static let taskSectionHeaderViewId = "TaskSectionHeaderView"
+    static let collectionViewFooter = "CollectionViewFooter"
+    static let collectionViewFooterId = "CollectionViewFooter"
+    static let refreshCatagoryNotificationName = Notification.Name("refreshCatagory")
 }

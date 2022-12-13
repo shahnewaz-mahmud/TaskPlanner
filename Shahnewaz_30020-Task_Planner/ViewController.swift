@@ -31,16 +31,17 @@ class ViewController: UIViewController, CatagoryCellDelegate {
     
         //set the task list according to catagory to show in table cell
         setTaskList()
+        
     }
     
-    //for Delegate
+    //for CatagoryCell Delegate
     func setTaskCatagory(type: String) {
         catagory = type
         print(catagory)
         setTaskList()
         tableView.reloadSections([1], with: .automatic)
     }
-    
+
     //Reload the tasklist of particular catagory for table cell
     func setTaskList()
     {
@@ -203,8 +204,6 @@ extension ViewController: UITableViewDelegate {
         
         alertVC.addAction(confirmDelete)
         present(alertVC, animated: true)
-        
-        
     }
     
     //function for mark a task as done

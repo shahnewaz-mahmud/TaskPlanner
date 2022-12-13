@@ -33,7 +33,21 @@ class CatagoryCell: UITableViewCell {
         catagoryCollectionCellLayout.scrollDirection = .horizontal
         
         catagoryCollectionView.collectionViewLayout = catagoryCollectionCellLayout
+        
+        let catagoryCollectionVCFooter = UINib(nibName: Constants.collectionViewFooter, bundle: nil)
+        
+        catagoryCollectionView.register(catagoryCollectionVCFooter, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: Constants.collectionViewFooterId)
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshCatagoryList), name: Constants.refreshCatagoryNotificationName, object: nil)
+        
+      
     }
+    
+    @objc func refreshCatagoryList() {
+        catagoryCollectionView.reloadSections([0])
+    }
+    
+    
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -42,6 +56,8 @@ class CatagoryCell: UITableViewCell {
     }
     
 }
+
+
 
 extension CatagoryCell: UICollectionViewDataSource {
     
@@ -58,6 +74,21 @@ extension CatagoryCell: UICollectionViewDataSource {
         catagoryCollectionCell.catagoryTitile.text = catagoryList[indexPath.row]
 
         return catagoryCollectionCell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionFooter
+        {
+            let catagoryCVFooter = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: Constants.collectionViewFooterId, for: indexPath)
+            return catagoryCVFooter
+        }
+        
+        return UICollectionReusableView()
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize(width: 200, height: 300)
     }
     
     

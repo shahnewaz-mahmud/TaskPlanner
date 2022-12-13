@@ -11,6 +11,8 @@
 		355E93142946374F007CE9F5 /* CatagorySectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355E93132946374F007CE9F5 /* CatagorySectionHeaderView.xib */; };
 		355E9316294646B1007CE9F5 /* TaskSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 355E9315294646B1007CE9F5 /* TaskSectionHeaderView.swift */; };
 		355E9318294646D0007CE9F5 /* TaskSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 355E9317294646D0007CE9F5 /* TaskSectionHeaderView.xib */; };
+		89D3A77029481BDC0083D7DA /* CollectionViewFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D3A76E29481BDC0083D7DA /* CollectionViewFooter.swift */; };
+		89D3A77129481BDC0083D7DA /* CollectionViewFooter.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89D3A76F29481BDC0083D7DA /* CollectionViewFooter.xib */; };
 		89DACC0729431D3800008A26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DACC0629431D3800008A26 /* AppDelegate.swift */; };
 		89DACC0929431D3800008A26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DACC0829431D3800008A26 /* SceneDelegate.swift */; };
 		89DACC0B29431D3800008A26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DACC0A29431D3800008A26 /* ViewController.swift */; };
@@ -31,6 +33,8 @@
 		355E93132946374F007CE9F5 /* CatagorySectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatagorySectionHeaderView.xib; sourceTree = "<group>"; };
 		355E9315294646B1007CE9F5 /* TaskSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSectionHeaderView.swift; sourceTree = "<group>"; };
 		355E9317294646D0007CE9F5 /* TaskSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskSectionHeaderView.xib; sourceTree = "<group>"; };
+		89D3A76E29481BDC0083D7DA /* CollectionViewFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewFooter.swift; sourceTree = "<group>"; };
+		89D3A76F29481BDC0083D7DA /* CollectionViewFooter.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewFooter.xib; sourceTree = "<group>"; };
 		89DACC0329431D3800008A26 /* Shahnewaz_30020-Task_Planner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shahnewaz_30020-Task_Planner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89DACC0629431D3800008A26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89DACC0829431D3800008A26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				355E93132946374F007CE9F5 /* CatagorySectionHeaderView.xib */,
 				355E9315294646B1007CE9F5 /* TaskSectionHeaderView.swift */,
 				355E9317294646D0007CE9F5 /* TaskSectionHeaderView.xib */,
+				89D3A76E29481BDC0083D7DA /* CollectionViewFooter.swift */,
+				89D3A76F29481BDC0083D7DA /* CollectionViewFooter.xib */,
 			);
 			path = "Shahnewaz_30020-Task_Planner";
 			sourceTree = "<group>";
@@ -165,6 +171,7 @@
 				89DACC1029431D3D00008A26 /* Assets.xcassets in Resources */,
 				89DACC0E29431D3800008A26 /* Main.storyboard in Resources */,
 				89DACC1D2943246800008A26 /* CatagoryCell.xib in Resources */,
+				89D3A77129481BDC0083D7DA /* CollectionViewFooter.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +191,7 @@
 				89DACC2229432B8200008A26 /* CatagoryCollectionViewCell.swift in Sources */,
 				89DACC1C2943246800008A26 /* CatagoryCell.swift in Sources */,
 				355E9316294646B1007CE9F5 /* TaskSectionHeaderView.swift in Sources */,
+				89D3A77029481BDC0083D7DA /* CollectionViewFooter.swift in Sources */,
 				355E931229463700007CE9F5 /* CatagorySectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
